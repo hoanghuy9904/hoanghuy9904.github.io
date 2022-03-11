@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+nav {
+    background-color: darkmagenta;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 36px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 80px;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 2rem;
+    border-radius: 3px;
+}
+
+a.active,
+a:hover {
+    color: gold;
+    transition: 0.3s;
+}
+
+#icon {
+    float: right;
+    display: inline;
+    line-height: 80px;
+    color: #000;
+    padding-right: 10px;
+    display: none;
+}
+
+.menu1 {
+    display: none;
+}
+
+
+/* .menu1 {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    bottom: -80%;
+    left: 0;
+    background-color: rgba(0, 0, 0);
+    display: none;
+} */
+
+.menu1 ul li {
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+/* co hay ko cung đc cai  nay moi lam them hihi */
+
+
+/* .menu1 ul li a {
+    color: white;
+}
+
+.menu1 ul li a:hover {
+    color: coral;
+}
+
+.menu1 ul li .active {
+    color: coral;
+} */
+
+@media(max-width:749px) {
+    #icon {
+        float: right;
+        display: inline;
+        line-height: 80px;
+        color: #000;
+        padding-right: 40px;
+        font-size: 23px;
+        display: block;
+        cursor: pointer;
+    }
+    nav ul {
+        float: right;
+        margin-right: 20px;
+        display: none;
+    }
+    .menu1 {
+        position: fixed;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        top: 80px;
+        right: 0;
+        bottom: -80%;
+        left: 0;
+        background-color: rgba(0, 0, 0);
+        display: none;
+    }
+}
